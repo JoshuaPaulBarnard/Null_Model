@@ -23,7 +23,7 @@ def null_model( dataset, target_x = None, prediction_error = False, distribution
         print( "Which gives us a 95 percent chance for a score to fall between (",  lower_bound_95,  ", ",  upper_bound_95,  ").")
 
     if return_values is True:
-        return y_mean, lower_bound_95, upper_bound_95
+        return y_mean, y_stndev, lower_bound_95, upper_bound_95
 
     if prediction_error is True:
         #   Create simulated data using monte carlo sampling for the specific distribution
